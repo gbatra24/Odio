@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp">
+        <ImageView
+            android:id="@+id/logo_head"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/odio"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+

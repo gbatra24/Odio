@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_record"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--<LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ODIO"
+            android:textSize="20dp"/>
+
+    </LinearLayout>-->
+    <!--<LinearLayout
+        android:id="@+id/buttons_quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_mode"
+            android:layout_width="wrap_content"
+            android:text="MODE"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="QUALITY"
+            android:id="@+id/btn_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/primary_dark"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_mic_white_36dp" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignBottom="@+id/recordProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/recordProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:progressDrawable="@drawable/record_progress_bar"
+        android:background="@drawable/record_progress_bar_background"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPause"
+        android:drawableLeft="@drawable/ic_media_pause"
+        android:text="@string/pause_recording_button"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recording_status_text"
+        android:text="@string/record_prompt"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/recordProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>

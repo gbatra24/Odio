@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "466847990482",
+    "firebase_url": "https://odio-ecdb6.firebaseio.com",
+    "project_id": "odio-ecdb6",
+    "storage_bucket": "odio-ecdb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466847990482:android:613cfc7b91a422e4",
+        "android_client_info": {
+          "package_name": "com.odio.adfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466847990482-4urdembgobd6d066rg1aje6ali015cmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.odio.adfree",
+            "certificate_hash": "7972bf79c7418c73269ba1f40e12aab2f8374ae9"
+          }
+        },
+        {
+          "client_id": "466847990482-d9omqs79pp1k55tinoubieh0tkml7gnu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "466847990482-d9omqs79pp1k55tinoubieh0tkml7gnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ6OHFWJOZrXkixWCnxzvx9SmGTF2hp78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466847990482-d9omqs79pp1k55tinoubieh0tkml7gnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

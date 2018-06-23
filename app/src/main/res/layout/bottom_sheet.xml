@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circular_edges_white_nostroke"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/bottomsheet_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="SWIPE"
+        android:background="#1CE0A6"
+        android:textColor="@android:color/white" />
+
+    <fragment
+        android:id="@+id/fileviewer"
+        android:name="com.android.odio.fragments.FileViewerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

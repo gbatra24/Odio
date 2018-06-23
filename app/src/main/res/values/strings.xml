@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- About -->
+    <string name="link">Website: github.com/dkim0419/SoundRecorder</string>
+
+    <!-- Toolbar -->
+    <string name="app_name">Odio</string>
+    <string name="action_licenses">Licenses</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_title_record">Record</string>
+    <string name="tab_title_saved_recordings">Saved Recordings</string>
+
+    <!-- Toasts -->
+    <string name="toast_recording_start">Recording started</string>
+    <string name="toast_recording_finish">Recording saved to</string>
+    <string name="toast_file_delete">%1$s successfully deleted</string>
+    <string name="toast_file_exists">The file %1$s already exists. Please choose a different file name.</string>
+
+    <!-- Notifications -->
+    <string name="notification_recording">Recording...</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title_delete">Confirm Delete...</string>
+    <string name="dialog_text_delete">Are you sure you would like to delete this file?</string>
+    <string name="dialog_title_licenses">Open Source Licenses</string>
+    <string name="dialog_title_share">Share File</string>
+    <string name="dialog_title_rename">Rename File</string>
+    <string name="dialog_title_options">Options</string>
+
+    <string name="dialog_file_share">Share</string>
+    <string name="dialog_file_rename">Rename</string>
+    <string name="dialog_file_delete">Delete</string>
+    <string name="dialog_action_cancel">Cancel</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_action_yes">Yes</string>
+    <string name="dialog_action_no">No</string>
+
+    <string name="no_saved_recordings_message">No saved recordings</string>
+    <string name="pause_recording_button">Pause</string>
+    <string name="resume_recording_button">Resume</string>
+    <string name="default_file_name">MyRecording</string>
+    <string name="record_prompt">Tap the button to start recording</string>
+    <string name="record_in_progress">Recording</string>
+
+    <string name="send_to">Send to</string>
+
+    <!-- Preferences -->
+    <string name="pref_high_quality_key">pref_high_quality</string>
+    <string name="pref_high_quality_title">Enable High Quality Recording</string>
+    <string name="pref_high_quality_desc">Record in CD Quality</string>
+    <string name="pref_about_key">pref_about</string>
+    <string name="pref_about_title">About</string>
+    <string name="pref_about_desc">v%s</string>
+
+    <!--Storage Preference-->
+    <string name="storagepref_title">Storage Options</string>
+
+    <!--Quality Preference-->
+    <string name="qualitypref_title">Sound Quality</string>
+    <string-array name="quality_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="quality_titles">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <!--Channel Preferences-->
+    <string name="channel_pref">Audio Channel</string>
+    <string-array name="channel_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="channel_titles">
+        <item>Stereo</item>
+        <item>Mono</item>
+    </string-array>
+
+</resources>
