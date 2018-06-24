@@ -1,4 +1,4 @@
-# Odio
+# Odio - a light-weight and ad-free audio recorder
 
 Odio is a simple and easy to use audio recorder without any time limits. You can use it for recording meetings, audio notes, speeches, lectures, interviews, etc.
 
@@ -15,6 +15,8 @@ Features:
 - Store the recordings in the location of your choice
 
 Open for contributions. Hope you like it :)
+
+For latest version of the build, [Go to Play Store](https://play.google.com/store/apps/details?id=com.odio.adfree)
 
 
 # Screenshots
