@@ -25,8 +25,5 @@ For latest version of the build, [Go to Play Store](https://play.google.com/stor
 ![Alt text](https://github.com/gbatra24/Odio/blob/master/Screenshots/3.png?raw=false)
 ![Alt text](https://github.com/gbatra24/Odio/blob/master/Screenshots/1.png?raw=false)
 
-# Acknowledgement
-- Daniel Kim (Yehun) [https://github.com/dkim0419/SoundRecorder](https://github.com/dkim0419/SoundRecorder)
-
 # Privacy Policy
 To view the privacy policies, [Click here](https://sites.google.com/view/odioprivacypolicy/home)
