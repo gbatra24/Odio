@@ -121,6 +121,8 @@ public class RecordingService extends Service {
             e.printStackTrace();
 //            Log.e(LOG_TAG, "prepare() failed");
 //            System.out.println("Exception caught : "+e);
+        } catch (IllegalArgumentException iae) {
+            iae.printStackTrace();
         }
     }
 
