@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 
 import com.android.odio.R;
 import com.android.odio.fragments.RecordFragment;
+import com.crashlytics.android.Crashlytics;
 import com.google.firebase.crash.FirebaseCrash;
 
 
@@ -88,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
             }
         });
+
+//        Crashlytics.getInstance().crash();
     }
 
     @Override

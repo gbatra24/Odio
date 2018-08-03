@@ -123,6 +123,8 @@ public class RecordingService extends Service {
 //            System.out.println("Exception caught : "+e);
         } catch (IllegalArgumentException iae) {
             iae.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
