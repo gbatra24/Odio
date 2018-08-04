@@ -46,5 +46,9 @@
         </provider>
         <service android:name=".RecordingService" />
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="026b84ebf6599a9de468e68ec4692c525f47f3c3" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

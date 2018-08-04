@@ -81,4 +81,8 @@
         <item>Mono</item>
     </string-array>
 
+    <!--MainActivity-->
+    <string name="bottomsheet_up">SWIPE UP</string>
+    <string name="bottomsheet_down">SWIPE DOWN</string>
+
 </resources>

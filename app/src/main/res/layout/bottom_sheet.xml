@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="SWIPE"
+        android:text="@string/bottomsheet_up"
+        android:textStyle="bold"
         android:background="#1CE0A6"
         android:textColor="@android:color/white" />
 

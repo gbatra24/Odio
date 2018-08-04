@@ -15,11 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.android.odio.R;
 import com.android.odio.fragments.RecordFragment;
 import com.crashlytics.android.Crashlytics;
 import com.google.firebase.crash.FirebaseCrash;
+import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -29,10 +31,13 @@ public class MainActivity extends AppCompatActivity {
 //    private PagerSlidingTabStrip tabs;
 //    private ViewPager pager;
     private Toolbar toolbar;
+    private TextView bottomSheetTitle;
+    private BottomSheetBehavior bottomSheetBehavior;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
 
         toolbar = findViewById(R.id.toolbar);
@@ -47,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         /*ActivityCompat.requestPermissions(this, new String[] { Manifest.permission.RECORD_AUDIO,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE},10);*/
 
+        bottomSheetTitle = findViewById(R.id.bottomsheet_header);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
@@ -55,31 +62,28 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         LinearLayout bottomSheetLayout = findViewById(R.id.bottom_sheet);
-        final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
+        bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout);
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 switch (newState) {
                     case BottomSheetBehavior.STATE_HIDDEN: {
-//                        System.out.println("BottomSheet : Hidden");
                         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
 
                     }
                         break;
                     case BottomSheetBehavior.STATE_EXPANDED: {
-//                        System.out.println("BottomSheet : Expanded");
+                        bottomSheetTitle.setText(R.string.bottomsheet_down);
                     }
                     break;
                     case BottomSheetBehavior.STATE_COLLAPSED: {
-//                        System.out.println("BottomSheet : Collapsed");
+                        bottomSheetTitle.setText(R.string.bottomsheet_up);
                     }
                     break;
                     case BottomSheetBehavior.STATE_DRAGGING: {
-//                        System.out.println("BottomSheet : Dragging");
                     }
                         break;
                     case BottomSheetBehavior.STATE_SETTLING: {
-//                        System.out.println("BottomSheet : Settling");
                     }
                         break;
                 }
@@ -111,4 +115,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if(bottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+            bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        } else {
+            super.onBackPressed();
+        }
+    }
 }
